@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>landing-shop-dynamic-web</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>DownloadServlet</display-name>
+    <servlet-name>DownloadServlet</servlet-name>
+    <servlet-class>shop.DownloadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DownloadServlet</servlet-name>
+    <url-pattern>/download</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SignupAcction</display-name>
+    <servlet-name>SignupAcction</servlet-name>
+    <servlet-class>shop.SignupAcction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SignupAcction</servlet-name>
+    <url-pattern>/signup-action</url-pattern>
+  </servlet-mapping>
+</web-app>
